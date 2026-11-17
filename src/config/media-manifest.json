@@ -1,0 +1,34 @@
+{
+  "_aciklama": "Tüm dosya yolları public/ klasörüne göredir. 'ready' alanı 'npm run check-media' ile diskteki duruma göre otomatik güncellenir. ready=false olan medya yerine geçici (prosedürel) görüntü/ses kullanılır.",
+  "acilis": {
+    "video": {
+      "path": "media/video/sahne01_yatak_odasi.mp4",
+      "ready": false,
+      "aciklama": "Ana çekim: gece, karanlık yatak odası; yatağın kenarında sırtı kameraya dönük oturan genç erkek; camda yağmur, soğuk mavi ışık, yavaş dolly-in.",
+      "teknik": "1080x1920 (9:16), 30 fps, en az 8 sn, H.264/ProRes, sessiz veya ayrık ses",
+      "gecici": "Prosedürel SVG sahne (src/components/ProceduralBedroom.tsx)"
+    },
+    "seslendirme": {
+      "path": "media/audio/vo_sahne01.wav",
+      "ready": false,
+      "aciklama": "Seslendirme: \"Kaç defa söz verdin Rabbine? 'Bir daha yapmayacağım' dedin...\"",
+      "teknik": "WAV 48 kHz / 24-bit mono, ~0:01.0'de başlayıp 7.6 sn içinde bitmeli",
+      "gecici": "Ses yok — yalnızca zamanlanmış altyazı gösterilir"
+    },
+    "ambiyans": {
+      "path": "media/audio/ambiyans_yagmur.wav",
+      "ready": false,
+      "aciklama": "Ortam sesi: cama vuran yağmur, uzak şehir uğultusu, oda tonu.",
+      "teknik": "WAV 48 kHz stereo, en az 8 sn",
+      "gecici": "placeholders/yagmur_gecici.wav (ffmpeg ile üretilen filtrelenmiş gürültü)",
+      "geciciPath": "placeholders/yagmur_gecici.wav"
+    },
+    "muzik": {
+      "path": "media/audio/muzik_acilis.wav",
+      "ready": false,
+      "aciklama": "Müzik: düşük, karanlık pad / drone (çalgısız tercih edilebilir).",
+      "teknik": "WAV 48 kHz stereo, en az 8 sn",
+      "gecici": "Yok — müzik kullanılmıyor"
+    }
+  }
+}

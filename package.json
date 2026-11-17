@@ -1,0 +1,26 @@
+{
+  "name": "tovbe-donmek-icin-gec-degil",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tövbe – Dönmek İçin Geç Değil | Remotion + TypeScript dikey sinematik video",
+  "scripts": {
+    "studio": "remotion studio",
+    "check-media": "node scripts/check-media.mjs",
+    "placeholders": "node scripts/make-placeholders.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "render:acilis": "remotion render AcilisSahnesi out/acilis_sahnesi_onizleme.mp4",
+    "still:acilis": "remotion still AcilisSahnesi out/acilis_kare.png --frame=120"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.544",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.544"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "typescript": "7.0.2"
+  }
+}

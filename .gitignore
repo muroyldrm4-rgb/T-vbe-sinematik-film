@@ -1,0 +1,6 @@
+node_modules/
+out/
+.DS_Store
+*.log
+# Gerçek çekimler büyük olabilir; Git LFS kullanılmıyorsa repo dışında tutun:
+# public/media/video/*.mp4
